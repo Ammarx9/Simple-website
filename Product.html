@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Product</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="scanner website Product">
+    <meta name="keywords" content="scanner ,Product , discount ">
+
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div class="niv">
+
+        <ul>
+            <li><span class="Welcome">Ammar for scanner</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li> <a id="current-page" href="Product.html">Product</a></li>
+            <li><a href="feedback.html">feedback</a></li>
+            <li><a href="Purchase.html">Purchase</a></li>
+        </ul>
+
+    </div>
+
+    <div class="Login">
+        <br>
+        <div class="error-L">
+            <span id="user-er">error: name should be 4 woerds </span>
+            <span id="password-er">error: password should be 6 words</span>
+        
+        </div>
+        <br>
+        <form action="sd" id="Login-f" onsubmit="return valid_login();">
+            <label>User Name</label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="user" type="text">
+            <br>
+            <br>
+            <br>
+            <label> password</label>
+            &nbsp; &nbsp;<input onblur="blurr(this);" onfocus="foucs (this);" id="password" type="password">
+            <br>
+            <br>
+            <label> Remember me</label>
+            <input type="checkbox">
+            <br>
+            <br>
+            <input id="Login-sub"  type="submit" value="Login">
+            
+            
+        </form>
+    </div>
+
+    <div class="Product">
+
+        <h1>Product</h1>
+
+        <!-- every Scanner have div and have same class so any style apply for all and be the same style -->
+
+
+        <!-- 1 -->
+        <div class="Scanner">
+            <h2 class="name">HP Smart Tank 720</h2>
+            <img class="img-Scanner" src="images/5a5fcb03acc10e7058b9e114edd359c0b94ec441_573083.jpg"
+                alt="HP Smart Tank 720">
+            <p class="price">Price :250$</p>
+            <p class="release-date">release date :2020</p>
+
+        </div>
+
+        <!-- 2 -->
+        <div class="Scanner">
+            <h2 class="name">Epson EcoTank L5290</h2>
+            <img class="img-Scanner" src="images/c6897935f32f8c4aaa61c6d359a29eef92ad448e_586266.jpg"
+                alt="Epson EcoTank L5290">
+            <p class="price">Price :300$</p>
+            <p class="release-date">release date :2020</p>
+
+        </div>
+        <!-- 3 -->
+        <div class="Scanner">
+            <h2 class="name">Fujitsu ScanSnap iX1300</h2>
+            <img class="img-Scanner" src="images/GUEST_a5fc1ac6-4fbf-4e4f-905b-433a9908d2e2.jpeg"
+                alt="Fujitsu ScanSnap iX1300">
+            <p class="price">Price :100$</p>
+            <p class="release-date">release date :2021</p>
+
+        </div>
+
+        <hr>
+        <!-- 4 -->
+        <div class="Scanner">
+            <h2 class="name">HP ENVY Inspire 7955e</h2>
+            <img class="img-Scanner" src="images/GUEST_03e2befe-ef37-41e5-8401-44ceb8e38361.jpeg"
+                alt="HP ENVY Inspire 7955e">
+            <p class="price">Price :400$</p>
+            <p class="release-date">release date :2021</p>
+
+        </div>
+        <!-- 5 -->
+        <div class="Scanner">
+            <h2 class="name">Epson WorkForce Pro</h2>
+            <img class="img-Scanner" src="images/GUEST_1fe12cd3-feb4-4a75-aa8d-71ed7f62be34.jpeg"
+                alt="Epson WorkForce Pro">
+            <p class="price">Price :222$</p>
+            <p class="release-date">release date :2021</p>
+
+        </div>
+        <!-- 6 -->
+        <div class="Scanner">
+            <h2 class="name">EcoTank ET-3843 All-in-One</h2>
+            <img class="img-Scanner" src="images/GUEST_143dbfe3-cc4f-4d6e-8207-c419078dc015.jpeg"
+                alt="EcoTank ET-3843 All-in-One">
+            <p class="price">Price :120$</p>
+            <p class="release-date">release date :2021</p>
+
+        </div>
+
+        <hr>
+        <h1>discount Scanner</h1>
+        
+        <!-- 7 -->
+        <div class="Scanner">
+            <h2 class="name">HP LaserJet Tank 2504dw</h2>
+            <img class="img-Scanner" src="images/GUEST_97eb99ce-e4d7-462d-b48b-ab7bb98ac0f5.jpeg"
+                alt="HP LaserJet Tank 2504dw">
+            <p class="price">Price :<span id="dic"> 450$</span> &nbsp;350$</p>
+            <p class="release-date">release date :2021</p>
+
+        </div>
+
+        <!-- 8 -->
+        <div class="Scanner">
+            <h2 class="name">Canon Pixma TS6420A</h2>
+            <img class="img-Scanner" src="images/GUEST_b27dfbb3-d9bc-4ace-ae59-557557c53751.jpeg"
+                alt="Canon Pixma TS6420A">
+            <p class="price">Price :<span id="dic"> 600$</span> &nbsp;  400$</p>
+            <p class="release-date">release date :2021</p>
+
+        </div>
+
+        <!-- 9 -->
+        <div class="Scanner">
+            <h2 class="name">HP DeskJet 3755 Wireless</h2>
+            <img class="img-Scanner" src="images/GUEST_5efc2d2f-e79d-41ed-97f8-7e1f7ae365f6.jpeg"
+                alt="HP DeskJet 3755 Wireless">
+            <p class="price">Price :<span id="dic"> 700$</span>&nbsp; 400$</p>
+            <p class="release-date">release date :2021</p>
+
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="fot">
+        all Right blong to Ammar Scaner website &copy
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

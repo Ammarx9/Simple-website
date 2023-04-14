@@ -1,0 +1,390 @@
+
+/* background for the page */
+body{
+   background-image:url("../images/5291450.jpg") ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: auto;
+   
+   
+}
+/* niv bar Style here make it fixed so it move when scroll  */
+.niv ul{
+    list-style-type: none;
+    position: fixed;
+    background-color: #333;
+    width: 100%;
+    margin: 0 0 0 -8px;
+    padding: 0;
+    top: 0;
+    z-index: 7;
+    
+    
+}
+/* when hover with mouse the background will change */
+.niv a:hover{
+    background-color: #816B87;
+}
+
+#current-page{
+    background-color: green;
+}
+
+
+.niv .Welcome {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.niv li{
+    /* make niv to be in line */
+    display: inline;
+    
+}
+.niv a {
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    width: 100px;
+    margin: 0 70px;
+    padding: 0px 50px;
+    
+    
+    
+}
+/* login form */
+.Login{
+    margin: 50px 0 0 0;
+    border-style: solid;
+    border-width: 2px;
+    width: 20%;
+    padding-left: 10px;
+    height: 200px;
+       
+
+
+}
+.error-L{
+   position: relative;
+    color: red;
+}
+.error-L #user-er{
+    position: absolute;
+    visibility: hidden;
+    left: 70px;
+    top: 0px;
+    
+
+
+}
+.error-L #password-er{
+    position: absolute;
+    visibility: hidden;
+    left: 70px;
+    top: 55px;
+  
+}
+.Login #Login-sub{
+    margin-left: 120px;
+}
+
+
+.cont{
+    background-color: aliceblue;
+    margin: 100px 120px 0 120px;
+    
+    text-align: center;
+    
+    border-style: solid;
+    border-radius: 20px;
+}
+
+/* for the BookMark */
+.cont .BokM {
+    list-style-type: none;
+    font-size: 20px;
+    color:#B2B147;
+    font-weight: bolder;
+    
+
+}
+.BokM a{
+    text-decoration: none;
+    color:#B2B147;
+    
+}
+ .BokM li{
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+
+.cont p {
+    font-size: 20px;
+}
+.cont h1 {
+    text-decoration: underline;
+
+}
+.cont h2 {
+    text-decoration: underline;
+
+}
+.cont #pro-img{
+    width: 20%;
+    height: 20%;
+    
+
+}
+
+.cont .pro-Aimg {
+    width: 20%;
+    height: 90%;
+    margin-left: 498px;
+    
+    
+    border-color: darkslategray;
+    /* color: #b3104e; */
+    border-style: solid;
+    /* text-decoration: none; */
+    /* font-size: 25px; */
+    
+    border-radius: 8px;
+
+}
+
+.fot{
+    border-top-style: solid;
+    background-color: #6F6373;
+    width: 100%;
+    margin: 30px -20px -10px -8px ;
+    height: 80px;
+    
+    text-align: right;
+    font-weight: bold;
+}
+
+.feedback{
+    width: 60%;
+    height: 550px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 60px auto;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.feedback label{
+    font-weight: bold;
+
+}
+
+.feedback h1{
+    text-align: center;
+
+}
+
+/* feedback error */
+.feedback-er{
+    color: red;
+
+}
+
+.feedback-er #name-F-er{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    visibility: hidden
+
+}
+.feedback-er #name-F-digerr{
+    position: absolute;
+    top: 120px;
+    left: 610px;
+    visibility: hidden
+
+}
+.feedback-er #phone-F-er{
+    position: absolute;
+    top: 80px;
+    left: 360px;
+    visibility: hidden;
+
+
+}
+
+.feedback-er #email-F-er{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    visibility: hidden;
+
+
+}
+.feedback #topics-F-er{
+    position: absolute;
+    top: 120px;
+    left: 360px;
+    visibility: hidden;
+
+
+}
+
+.feedback-er #message-F-er{
+    position: absolute;
+    top: 80px;
+    left: 670px;
+    visibility: hidden;
+
+
+}
+
+
+
+
+.Purchase {
+    width: 60%;
+    height: 860px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 60px auto;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.Purchase label{
+    font-weight: bold;
+}
+/* purchese error */
+.Purchase-er{
+    color: red;
+}
+.Purchase-er #model-P-er{
+    position: absolute;
+    left: 60px;
+    top: 70px;
+    visibility: hidden;
+}
+
+.Purchase-er #number-P-devices-er{
+    position: absolute;
+    top: 69px;
+    left: 280px;
+    visibility: hidden;
+}
+.Purchase-er #name-P-er{
+    position: absolute;
+    top: 69px;
+    left: 590px;
+    visibility: hidden;
+}
+
+.Purchase-er #name-P-digerr{
+    position: absolute;
+    top: 88px;
+    left: 600px;
+    visibility: hidden;
+
+}
+.Purchase-er #phone-P-er{
+    position: absolute;
+    top: 88px;
+    left: 40px;
+    visibility: hidden;
+}
+.Purchase-er #email-P-er{
+    position: absolute;
+    top: 88px;
+    left: 320px;
+    visibility: hidden;
+}
+.Purchase-er #address-P-er{
+    position: absolute;
+    top: 110px;
+    left: 45px;
+    visibility: hidden;
+}
+.Purchase-er #payment-P-er{
+    position: absolute ;
+    top: 110px;
+    left: 300px;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Purchase h1 {
+    text-align: center;
+}
+/* so the img be center to other img */
+.Purchase #apple {
+    position: relative;
+    top: -25px;
+}
+.Purchase .Pay-img{
+    
+   
+    width: 10%;
+    height: 10%;
+    margin: 0 10px 0 10px;
+    
+}
+.Purchase .pay{
+   margin: 0 50px  0 50px;
+}
+
+
+.Product{
+    border-radius: 20px;
+    background-color: aliceblue;
+    
+    border-style: solid;
+    margin: 100px 0 0 0;
+    
+}
+
+
+
+.Product h1 {
+    text-align: center;
+
+}
+.Product p {
+    font-weight: bold;
+}
+
+.Product .Scanner{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-style: solid;
+    margin: 15px 70px  ;
+    display: inline-block;
+    width: 20%;
+    
+
+
+}
+.Product .img-Scanner {
+    height: 50%;
+    width: 50%;
+}
+.Product span#dic {
+    text-decoration: line-through;
+}

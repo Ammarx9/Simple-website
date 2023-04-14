@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="scanner website Purchase">
+    <meta name="keywords" content="scanner , Purchase ">
+    <title>Purchase </title>
+    <!-- link external css style -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <!-- start navbar -->
+    <div class="niv">
+
+        <ul>
+            <li><span class="Welcome">Ammar for scanner</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="Product.html">Product</a></li>
+            <li><a href="feedback.html">feedback</a></li>
+            <li><a id="current-page" href="Purchase.html">Purchase</a></li>
+        </ul>
+
+    </div>
+    <!-- end navbar -->
+
+
+    <div class="Login">
+        <br>
+        <div class="error-L">
+            <span id="user-er">error: name should be 4 woerds </span>
+            <span id="password-er">error: password should be 6 words</span>
+        
+        </div>
+        <br>
+        <form action="sd" id="Login-f" onsubmit="return valid_login();">
+            <label>User Name</label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="user" type="text">
+            <br>
+            <br>
+            <br>
+            <label> password</label>
+            &nbsp; &nbsp;<input onblur="blurr(this);" onfocus="foucs (this);" id="password" type="password">
+            <br>
+            <br>
+            <label> Remember me</label>
+            <input type="checkbox">
+            <br>
+            <br>
+            <input id="Login-sub"  type="submit" value="Login">
+            
+            
+        </form>
+    </div>
+
+
+
+    
+    <div class="Purchase ">
+        <h1>Purchase</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        
+
+        <div class="Purchase-er">
+            <span id="model-P-er">|| error model : chose model ||</span>
+            <span id="number-P-devices-er">|| error number of devices : enter number || </span>
+            <span id="name-P-er">|| error name: enter only 6 words no number ||</span>
+            <span id="phone-P-er">|| error phone: start 9665xxxxx ||</span>
+            <span id="email-P-er">|| error email: enter valid email ||</span>
+            <span id="address-P-er">|| error adderss : enter adderss ||</span>
+            <span id="payment-P-er">|| error payment : Choose payment method ||</span>
+            <span id="name-P-digerr">|| error name have number remove number ||</span>
+
+
+        </div>
+        
+        <form action="sd" id="Purchase-f" onsubmit=" return vaild_Purchase();">
+            <Label> model : </Label>
+            <!-- list select model scanner  -->
+            <select class="list " id="model">
+                <option value="select model scanner">select model scanner</option>
+                <option value="HP-Smart-Tank-720 ">HP Smart Tank 720</option>
+                <option value="Epson-EcoTank-L5290 ">Epson EcoTank L5290</option>
+                <option value="Fujitsu-ScanSnap-iX1300 ">Fujitsu ScanSnap iX1300</option>
+                <option value="HP-ENVY-Inspire-7955e ">HP ENVY Inspire 7955e</option>
+                <option value="Epson-WorkForce-Pro ">Epson WorkForce Pro</option>
+                <option value="EcoTank-ET-3843-All-in-One ">EcoTank ET-3843 All-in-One</option>
+                <option value="HP-LaserJet-Tank-2504dw ">HP LaserJet Tank 2504dw</option>
+                <option value="Canon-Pixma-TS6420A ">Canon Pixma TS6420A</option>
+                <option value="HP-DeskJet-3755-Wireless ">HP DeskJet 3755 Wireless</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            
+            <label>number of devices:</label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="number-devices" type="text" name="Div-N"  placeholder="Enter number of devices">
+            <br>
+            <br>
+            <br>
+            <Label>Name :</Label>
+            <input oninput="name_dig_vaild_P();" onblur="blurr(this);" onfocus="foucs (this);" id="name" type="text " name="name" placeholder="Enter your name">
+            <!--new line -->
+            <br>
+            <br>
+            <br>
+            <Label> Phone :</Label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="phone" type="phone " name="phonenumber" placeholder="Enter your phone">
+            <br>
+            <br>
+            <br>
+            <Label>email : </Label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="email" type="email " name="email" placeholder="Enter your email">
+            <br>
+            <br>
+            <br>
+            <Label>address :</Label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="adderss" type="text " name="address" placeholder="Enter your address">
+            <br>
+            <br>
+            <br>
+            <Label>payment type : </Label>
+            <!-- list select payment type  -->
+            <br>
+            <img class="Pay-img" src="images/images.jpeg" alt="CASH" title="CASH">
+
+            <img id="apple" class="Pay-img" src="images/تنزيل.png" alt="APPLE-PAY" title="APPLE-PAY">
+
+            <img class="Pay-img" src="images/mada.png" alt="MADA" title="MADA">
+            <br>
+
+            <input class="pay" type="radio" name="paymethod" value="CASH">
+
+            <input class="pay" type="radio" name="paymethod" value="APPLE-PAY">
+
+            <input class="pay" type="radio" name="paymethod" value="MADA">
+
+
+
+            <br>
+            <br>
+            <Label>write note </Label>
+            <br>
+            <!-- textarea write note  -->
+            <textarea onblur="blurr(this);" onfocus="foucs (this);" class="write-note " cols="30" rows="5"  >
+                Note
+            </textarea>
+            <br>
+            <!-- complete the requset -->
+            <input type="submit" value="Purchase" >
+            <br>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="fot">
+        all Right blong to Ammar Scaner website &copy
+
+
+    </div>
+
+</body>
+
+</html>

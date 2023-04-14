@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="scanner website feedback">
+    <meta name="keywords" content="scanner , feedback ">
+    <title>Feedback </title>
+    <!-- link external css style -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <!-- start navbar -->
+    <div class="niv">
+        
+        <ul>
+            <li><span class="Welcome">Ammar for scanner</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="Product.html">Product</a></li>
+            <li><a id="current-page" href="feedback.html">feedback</a></li>
+            <li><a href="Purchase.html">Purchase</a></li>
+        </ul>
+
+    </div>
+    <!-- end navbar -->
+
+    <div class="Login">
+        <br>
+        <div class="error-L">
+            <span id="user-er">error: name should be 4 woerds </span>
+            <span id="password-er">error: password should be 6 words</span>
+        
+        </div>
+        <br>
+        <form action="sd" id="Login-f" onsubmit="return valid_login();">
+            <label>User Name</label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="user" type="text">
+            <br>
+            <br>
+            <br>
+            <label> password</label>
+            &nbsp; &nbsp;<input onblur="blurr(this);" onfocus="foucs (this);" id="password" type="password">
+            <br>
+            <br>
+            <label> Remember me</label>
+            <input type="checkbox">
+            <br>
+            <br>
+            <input id="Login-sub"  type="submit" value="Login">
+            
+            
+        </form>
+    </div>
+
+    <!-- div content the form feedback -->
+    <div class="feedback ">
+        <!-- form feedback -->
+
+        <div class="feedback-er">
+            <span id="name-F-er">|| error name: enter only 6 words no number || </span>
+            <span id="phone-F-er">|| error phone: start 9665xxxxx ||</span>
+            <span id="email-F-er">|| error email: enter valid email ||</span>
+            <span id="topics-F-er">|| error topics : chose topics ||</span>
+            <span id="message-F-er">|| error message : write message ||</span>
+            <span id="name-F-digerr">|| error name have number remove number ||</span>
+
+
+        </div>
+        <form  action="sd" onsubmit="return vaild_feedback(); " id="feedback-f">
+            <h1>feedback</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>
+
+            <Label>Name :</Label>
+            <input oninput="name_dig_vaild_F();" onblur="blurr(this);" onfocus="foucs (this);" id="name" type="text " name="name"  placeholder="Enter your name">
+            <!--new line -->
+            <br>
+            <br>
+            <br>
+            <Label> Phone :</Label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="phone" type="phone " name="phonenumber"  placeholder="Enter your phone">
+            <br>
+            <br>
+            <br>
+            <Label>email : </Label>
+            <input onblur="blurr(this);" onfocus="foucs (this);" id="email" type="email " name="email" placeholder="Enter your email">
+            <br>
+            <br>
+            <br>
+            <Label>Topics : </Label>
+            <!-- list select topics -->
+            <select id="topics" class="list ">
+                <option value="topics">topics</option>
+            <option value="Suggestion ">Suggestion</option>
+            <option value="Complaint ">Complaint</option>
+            <option value="Idea ">Idea</option>
+            <option value="Help ">Help</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <Label>message</Label>
+            
+            <!-- textarea message -->
+            <br>
+            <textarea onblur="blurr(this);" onfocus="foucs (this);" id="message" class="message " name="message" cols="30" rows="5"></textarea>
+            
+            <br>
+            <!--  send -->
+            <input type="submit" value="submit">
+           
+
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="fot">
+        all Right blong to Ammar Scaner website &copy
+
+
+    </div>
+
+</body>
+
+</html>
